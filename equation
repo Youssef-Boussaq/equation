@@ -1,0 +1,19 @@
+#we use the fonction to calculte delta
+def delta(a,b,c):
+    d=(b**2)- 4*a*c
+    return d 
+# we use procédure for print solution
+def s(a,b,c):
+    d=delta(a, b, c)
+    if d<0:
+        print("An equation that has no solution. ")
+    elif d==0:
+        print("the single solution is;", -b/2*a)
+    else:
+        print((-b+(d**0.5))/(2*a))
+        print((-b-(d**0.5))/(2*a))
+# input user this coefficient
+a=float(input(" input the coefficient of equation"))
+b=float(input(" input the coefficient of equation"))
+c=float(input(" input the coefficient of equation"))
+s(a, b, c)
